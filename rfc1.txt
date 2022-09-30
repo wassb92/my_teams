@@ -1,0 +1,73 @@
+
+
+
+
+
+
+Epitech Paris                                         Le Kremlin-Bicêtre
+Request for Comments: 1                                  Bouzidi Wassini
+Category: RFC my_teams                                      Brice Bougha
+                                                         Julien de-waele
+                                                               June 2022
+
+
+        Using my_teams protocol to implement a simple teams clone
+
+Abstract
+
+   This document describes how to use the my_teams protocol to do sev-
+   eral commands, like login; create a team, a channel, a thread and a
+   a reply. You also can list them, send a private message to another
+   user, and so on. Finally you can logout.
+
+Status of This Memo
+
+   "0" is used to print threads from a channel.
+   "1" is used when the user try to do an action and the resource alr-
+   eady exist.
+   "2" is used when the user try to do an action he is not allowed to
+   perform
+   "3" is used when the user try to do an action with a channel that
+   does not exist (list threads, create thread, etc...)
+   "4" is used when the user try to do an action with a team that do-
+   es not exist (list channels, subscribe, etc...)
+   "5" is used when the user try to do an action with a thread that
+   does not exist (list replies, create reply, etc...)
+   "6" is used when the user try to do an action with a user that does
+   not exist (send private message, /user)
+   "7" is used when a channel is created inside of a team
+   "8" is used when a user successfully login to the server (/login).
+   When you log in (/login) you should also receive from the server
+   this event.
+   "9" is used when a user logged out (/logout or lost connexion).
+   When you log out (/logout) you should also receive the event before
+   quitting.
+   "10" is used when the current logged user receives a private message
+   "11" is used when a new team is created
+   "12" is used when a new thread is created
+   "13" is used when a channel is created inside of a team
+   "14" is used when a new reply is posted in a thread
+   "15" is used when you requested an individual channel
+   "16" is used when you create channel successfully
+   "17" is used when you create a reply successfully
+   "18" is used when you subscribe to a team successfully
+   "19" is used when you requested an individual team
+   "20" is used when you create a team successfully
+   "21" is used when you requested a list of teams from the server
+   "22" is used when you requested an individual thread
+   "23" is used when you create a thread successfully
+   "24" is used when you unsubscribe from a team successfully
+   "25" is used when you requested an individual user
+   "26" is used when you requested a list of users from the server
+   "27" is used to display help message
+   "28" is used when you requested a list of private messages
+   "29" is used when you requested a list of channels from the server
+   "30" is used when you requested a list of replies from the server
+   "31" is used to display other error
+   "32" is used when you requested a list of teams from the server
+   "33" is used when user use something
+
+
+
+
+Epitech Students           my_teams project                   [Page 01]
